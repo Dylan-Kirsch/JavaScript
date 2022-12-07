@@ -1,10 +1,4 @@
-let aire = "quel est l'aire du cercle ?";
-console.log(aire);
+let rayon = prompt("quel est l'aire du cercle ?");
+let aireCercle = Math.pow(parseInt(rayon),2)*Math.PI;
 
-function calculateCircumference(radius) {
-    return 2 * Math.PI * radius;
-  }
-  
-  console.log(Math.PI);
-  
-  console.log(calculateCircumference(10));
+alert("aire du cercle de rayon =" + rayon + " = " + aireCercle);
