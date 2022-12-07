@@ -20,12 +20,12 @@ let message = "le cercle et de rayon" + rayonCercle;
 // message contient le cercle est de rayon 50
 
 let age = "44";
-age +=1;
+age += 1;
 // attention que age contient "441"
 console.log(age);
 
 let ageEnNombre = parseInt(age);
-ageEnNombre +=1;
+ageEnNombre += 1;
 console.log(ageEnNombre);
 console.log(parseInt(age));
 
