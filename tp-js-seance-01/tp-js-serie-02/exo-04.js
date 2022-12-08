@@ -1,4 +1,6 @@
-let temperatureCelsius = prompt("quel est la temperature Celcius ?");
+// Demander une temperature en °C 
+let temperatureCelsius = parseInt(prompt('Quelle est la temperature en °C?'))
+// convertir en kelvin
 let temperatureKelvin = temperatureCelsius+273.15;
-
-console.log(" la temperature de " + temperatureCelsius + " °Celsius vaut " + temperatureKelvin + " en Kelvin");
+// afficher dans la console
+console.log(`la temperature de ${temperatureCelsius}°C donne en kelvin: ${temperatureKelvin}K`);

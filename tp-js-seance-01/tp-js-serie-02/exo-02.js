@@ -1,6 +1,10 @@
-let prenom = prompt("Quel est votre prénom ? ");
-let age = prompt(" Quel est votre age ?");
-
-
-console.log("je m'appelle " + prenom );
-console.log("et j’ai " +age + " ans l’année prochaine");
+// demander le prenom
+let prenom = prompt('Quel est ton prénom?');
+// demander l'age
+let age = parseInt(prompt('Quel est ton age?'));
+// ajouter un an à l'age
+age+=1;
+// age = age+1;
+// age++;
+// afficher une salutation dans la console
+console.log(`Salut ${prenom}, tu va avoir ${age} l'an prochain`);

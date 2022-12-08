@@ -1,6 +1,6 @@
 let message = "";
 let i = 0;
-
+let nombreMax=16;
 
 do {
 
@@ -8,6 +8,6 @@ do {
     i++;
 
 }
-while (i<=16);
+while (i<=nombreMax);
 
 console.log(message);
