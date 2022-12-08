@@ -1,13 +1,6 @@
-let message = "";
-let i = 0;
-let nombreMax=16;
-
-do {
-
-    message+=`2^${i}=${Math.pow(2,i)} `;
-    i++;
-
+let exposant = 0;
+while(exposant <=16)
+    {
+        console.log(`2^${exposant} = ${Math.pow(2,exposant)}`);
+        exposant++;
 }
-while (i<=nombreMax);
-
-console.log(message);
