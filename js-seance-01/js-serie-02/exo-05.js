@@ -1,35 +1,14 @@
+// recuperer le paragraphe HTML avec comme identifiant p1
+let p1 = document.getElementById('p1');
+// saisir x et y
+let x = parseInt(prompt('X=?'));
+let y = parseInt(prompt('y=?'));
+// tester si x est plus grand que y et afficher "x est plus grand que y"
+let message="";
 
-let y = prompt("entrer une valeur");
-
-
-
-let x = prompt("entrer une valeur");
-// affiche une pop-up demandant le signe astrologique et affecte
-// la réponse à la variable signe
-if (x.toLowerCase() == "55") 
-// teste si le signe (tout est mis en minuscule) a la valeur "verseau"
-// dans l'affirmative, affiche un message dans la console développeur
-{
-  console.log("Oh ? moi aussi je suis verseau :)");
-}
-
-if (x > 0) {
-    //bloc exécuté quand le test est vérifié
-    result = 'positive';
-  } else {
-      // bloc exécuté dans le cas contraire
-    result = 'NOT positive';
-  }
-
-  if ((y > 0)||(x==0)) {
-    //bloc exécuté quand le test est vérifié :
-    //(a est strictement positif) OU (a vaut 0)
-    result = 'positive';
-  } else {
-      // bloc exécuté dans le cas contraire
-    result = 'NOT positive';
-  }
-
-
-let paragraphe = document.getElementById("p1"); // récupérer l'élement HTML
-paragraphe.innerHTML="Message";// modifier la propriété innerHTML
+if (x>y)
+    message = `le nombre ${x} est plus grand que le nombre ${y}`;
+else
+    message = `le nombre ${x} est plus petit ou égal que le nombre ${y}`;
+console.log(p1);
+p1.innerHTML= message;
