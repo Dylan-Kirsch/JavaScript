@@ -33,14 +33,14 @@ console.log(resultat);
 
 // ***************************************
 
-function tableau(num1,num2,num3){
-    var moyenne = num1 + num2 + num3;
+function tableau2(num1,num2,num3){
+    var moyenne = num1 / num2 / num3;
     return moyenne;
 }
 
 var a        = 55; 
 var b        = 55;
 var c        = 55;
-var resultat = tableau(a,b,c);
+var resultat = tableau2(a,b,c);
 
 console.log(resultat);
