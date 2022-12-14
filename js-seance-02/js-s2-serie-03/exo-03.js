@@ -17,26 +17,3 @@ while ((nombreEtoiles < 1) || (nombreEtoiles > 10))
     for (let i = 1; i <= nombreEtoiles; i++) {
         console.log("*".repeat(i));
     }
-
-  
-   
-// Methode While
-
-let i = 1;
-let texteEtoiles="";
-
-if ((nbetoiles >= 1)&&(nbetoiles<11)) {
-
-    while (i <= nbetoiles) {
-        
-        texteEtoiles+= '*';
-        console.log('methode while' + texteEtoiles);
-        i++
-    }
-
-
-
-}
-else {
-    console.log('Le nombre d’étoile n’est pas correct');
-}
