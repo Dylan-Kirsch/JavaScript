@@ -16,21 +16,20 @@ console.log('Le nombre d’étoile n’est pas correct');
 
 // Methode While
 
-nombre = parseInt(prompt('nombre d`etoiles=?'));
+let nombreEtoiles = parseInt(prompt('Nb etoiles = ?'));
+// tester si compris entre 1 et 10 inclus
+while ((nombreEtoiles < 1) || (nombreEtoiles > 10)) 
+{
+    alert ('le nombre d\'etoiles est incorrect');
+    nombreEtoiles = parseInt(prompt('Nb etoiles = ?'));
+}
+    // afficher n etoiles
+    let etoiles = "";
 
-let i = 1;
-
-if ((nombre >= 1)&&(nombre<11)) {
-   
-    let texteEtoiles="";
-    while (i <=nombre) {
-        texteEtoiles+='*';
-        i++;
+    for (let i = 1; i <= nombreEtoiles; i++) {
+        etoiles += "*";
     }
-    console.log('methode while ' + texteEtoiles);
-}
-else{
+    console.log(etoiles);
+    console.log("*".repeat(nombreEtoiles));
 
-console.log('Le nombre d’étoile n’est pas correct');
 
-}
