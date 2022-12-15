@@ -1,9 +1,7 @@
-let croissant = [1,2,3,4]
-let decroissant = [8,4,1,6]
+let tableau1=[1,3,4,7];
+let tableau2=[1,3,0,7];
 
-let estCroissant = true;
-
-for (let i = 0; i < croissant.length; i++) {
-    
-    
-}
+console.log(tableau1);
+console.log(estTableauEntierCroissant(tableau1));
+console.log(tableau2);
+console.log(estTableauEntierCroissant(tableau2));
