@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#boitier {
+    display: flex;
+    margin: 4% 0% 0% 30%;
+    width: 27%;
+    height: 76vh;
+    background-color: #bcbcbc;
+    border-radius: 12px;
+    border: 1px solid;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: inset 5px 9px 19px -9px #00000063;
+}
+
+#ecran {
+    width: 90%;
+    margin-right: 4%;
+}
+
+#ecran, input {
+    background: rgb(244, 244, 244);
+    height: 5vh;
+    width: 81%;
+    margin: 8% 11% 0% 10%;
+    border: 2px solid;
+}
+
+button {
+    margin: 2% 2% 2% 8%;
+    width: 20%;
+    height: 9vh;
+    border: 1px solid #000;
+    border-radius: 9px;
+    font-size: 1.3em;
+}
