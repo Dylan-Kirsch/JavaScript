@@ -1,4 +1,12 @@
-body {
+#ecran
+{
+    min-height: 50px;
+    background-color: aquamarine;
+}
+
+
+
+/* body {
     margin: 0;
     padding: 0;
 }
@@ -36,4 +44,4 @@ button {
     border: 1px solid #000;
     border-radius: 9px;
     font-size: 1.3em;
-}
+} */
