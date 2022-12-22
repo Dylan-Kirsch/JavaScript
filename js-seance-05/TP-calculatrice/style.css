@@ -1,12 +1,4 @@
-#ecran
-{
-    min-height: 50px;
-    background-color: aquamarine;
-}
-
-
-
-/* body {
+body {
     margin: 0;
     padding: 0;
 }
@@ -29,11 +21,20 @@
     margin-right: 4%;
 }
 
-#ecran, input {
+#ecran {
     background: rgb(244, 244, 244);
     height: 5vh;
     width: 81%;
     margin: 8% 11% 0% 10%;
+    border: 2px solid;
+}
+
+
+#ecran input {
+    background: rgb(244, 244, 244);
+    height: 5vh;
+    width: 99%;
+    margin: -1% 0% 0% -1%;
     border: 2px solid;
 }
 
@@ -44,4 +45,4 @@ button {
     border: 1px solid #000;
     border-radius: 9px;
     font-size: 1.3em;
-} */
+}

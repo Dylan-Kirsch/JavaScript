@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="fonction.js"></script>
+    <script src="execution.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <div id="ecran"></div>
+
+        <input type="text" name="saisie" id="saisie">
+        <input type="text" name="convertie" id="convertie">
+    </fieldset>
+
+    <fieldset>
+        <button class="btn_chiffre" value="1">1</button>
+        <button class="btn_chiffre" value="2">2</button>
+        <button class="btn_chiffre" value="3">3</button>
+        <button class="btn_chiffre" value="4">4</button>
+        <button class="btn_chiffre" value="5">5</button>
+        <button class="btn_chiffre" value="6">6</button>
+        <button class="btn_chiffre" value="7">7</button>
+        <button class="btn_chiffre" value="8">8</button>
+        <button class="btn_chiffre" value="9">9</button>
+        <button class="btn_chiffre" value="0">0</button>
+        <button id="btn_virgule" value=",">,</button>
+        <button id="btn_convertion">Convertir</button>
+    </fieldset>
+
+    <fieldset>
+        <div>Départ </div>
+        <input type="radio" name="depart" id="depart" value="euro" checked>Euro
+        <input type="radio" name="depart" id="depart" value="dollars"> dollars
+        <input type="radio" name="depart" id="depart" value="couronne"> couronne
+    </fieldset>
+
+    <fieldset>
+        <div>Arrivée </div>
+        <input type="radio" name="arrivee" id="arrivee" value="euro">Euro
+        <input type="radio" name="arrivee" id="arrivee" value="dollars" checked> dollars
+        <input type="radio" name="arrivee" id="arrivee" value="couronne"> couronne
+    </fieldset>
+
+</body>
+
+</html>
