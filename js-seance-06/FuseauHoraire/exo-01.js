@@ -70,25 +70,43 @@ console.log(getDateAgo(date,2));
 console.log(getDateAgo(date,365));
 
 //Exo 5 
-let year = new Date()
-let month = 0;
 
 function  getLastDayOfMonth(year, month) {
     
-    let mois = month+1;
+    let mois = month + 1;
     let annee = year;
 
-    if(month > 11) [
-        mois = 0,
-        annee = annee + 1
-    ]
-    else {
-
+    if(month > 11) {
+        mois = 0;
+        annee = annee + 1;
     }
 
-    date = new Date(annee, mois, 1);
-    dernierJour = getDateAgo(date,1)
+    let date = new Date(annee, mois, 1);
+    let dernierJour = getDateAgo(date,1);
 
-    return dernierJour.getDate()
+    return dernierJour.getDate();
 }
-console.log(getLastDayOfMonth(year,month,1));
+
+function getDateAgo(pDate,pNombreJours)
+{
+    // on enleve le nombre de jours converti en milli seconde
+    let resultat = pDate-(24*60*60*1000)*pNombreJours;
+    // resultat contient la date cherchée sous forme de 
+    // milli secondes
+   // console.log(pDate.getTime());
+   // console.log(resultat);
+    // a partir des milli secondes depuis 1/1/1970 on crée la date
+    return new Date(resultat);
+}
+
+console.log('getLastDayOfMonth(2022,11) doit donner 31');
+console.log(getLastDayOfMonth(2022,11));
+console.log((getLastDayOfMonth(2022,11)==31));
+
+console.log('getLastDayOfMonth(2022,1) doit donner 28');
+console.log(getLastDayOfMonth(2022,1));
+console.log((getLastDayOfMonth(2022,1)==28));
+
+console.log('getLastDayOfMonth(2021,5) doit donner 30');
+console.log(getLastDayOfMonth(2022,5));
+console.log((getLastDayOfMonth(2022,5)==30));
