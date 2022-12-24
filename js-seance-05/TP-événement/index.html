@@ -22,6 +22,7 @@
 
         <h1>Create Character</h1>
 
+
         <fieldset class="create1">
 
             <legend class="identite">Identité</legend>
@@ -33,27 +34,30 @@
                 <option value="elf">Elfe</option>
                 <option value="ork">Orque</option>
             </select>
-            <input type="radio" name="rank" id="roturier" value="roturier" checked>roture
-            <input type="radio" name="rank" id="noble" value="noble"> noblesse
-            <input type="radio" name="rank" id="royal" value="royal"> Royauté
+
+            <div id="rang">
+                <input type="radio" name="rank" id="roturier" value="roturier" checked> roture
+                <input type="radio" name="rank" id="noble" value="noble"> noblesse
+                <input type="radio" name="rank" id="royal" value="royal"> Royauté
+            </div>
 
         </fieldset>
-
-        
+      
 
         <fieldset class="creat2">
 
             <legend class="classe">Classe(s) du personnage</legend>
-            <input type="checkbox" name="priest" id="priest" class="classe"> Prêtre
-            <input type="checkbox" name="warrior" id="warrior" class="classe"> Guerrier
-            <input type="checkbox" name="rogue" id="rogue" class="classe"> Voleur
-            <input type="checkbox" name="mage" id="mage" class="classe"> Mage
+
+            <div id="class">
+                <input type="checkbox" name="priest" id="priest" class="classe"> Prêtre
+                <input type="checkbox" name="warrior" id="warrior" class="classe"> Guerrier
+                <input type="checkbox" name="rogue" id="rogue" class="classe"> Voleur
+                <input type="checkbox" name="mage" id="mage" class="classe"> Mage
+            </div>
 
         </fieldset>
 
-        <button id="btn_salutation">Dit bonjour</button>
-        
-        <div class="img"><img src="elfe.jpg" alt=""></div>
+        <button id="btn_salutation">Valider vôtre choix</button>
 
         <div id="classes"></div>
         <div id="error"></div>
@@ -61,10 +65,9 @@
         <div id="emotes"></div>
         <div id="salutations"></div>
         
-
-        
-
     </form>
-    
+
+     <div class="img"><img src="elfe.jpg" alt=""></div>
+
 </body>
 </html>

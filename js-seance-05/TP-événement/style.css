@@ -7,6 +7,14 @@ h1 {
     margin-left: 2%;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    float: left;
+    width: 50%;
+}
+
 #message {
     display: none;
 }
@@ -14,14 +22,15 @@ h1 {
 .create1 {
     display: flex;
     flex-direction: column;
-    margin: 3% 30% 2% 4%;
+    width: 21%;
+    margin: 3% 30% 0 4%;
     border: none;
 }
 
 .creat2 {
     display: flex;
-    margin: 3% 30% 2% 4%;
-    width: 27%;
+    margin: 1% 30% 2% 4%;
+    width: 25%;
     border: none;
     justify-content: space-between;
 }
@@ -29,20 +38,59 @@ h1 {
 legend.identite {
     margin: 1%;
     padding: 1% 2%;
-    font-size: 1.4em;
+    font-size: 1.7em;
     width: 80%;
+    text-decoration: underline;
 }
 
 #prenom, #nom, #titre {
-    margin: 1%;
-    border: none;
+    margin: 6% 0;
 }
 
+#race {
+    margin: 12% 0;
+    padding: 2%;
+    width: 120%;
+}
+
+#rang {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+input[type="radio" i] {
+    margin: 9% 7%;
+}
+
+legend.classe {
+    font-size: 1.7em;
+    margin-bottom: 6%;
+    text-decoration: underline;
+}
+
+#class {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+input[type="checkbox" i] {
+    margin: 9% 7%;
+}
 
 #btn_salutation {
-    margin-left: 4%;
+    margin-left: 6%;
 }
 
+.img {
+    display: flex;
+    float: right;
+}
+
+img {
+    width: 80%;
+}
 
 
 
