@@ -83,13 +83,14 @@ input[type="checkbox" i] {
     margin-left: 6%;
 }
 
-.img {
+#img {
     display: flex;
     float: right;
 }
 
-img {
+#img img {
     width: 80%;
+    display: none;
 }
 
 
