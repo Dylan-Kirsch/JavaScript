@@ -16,7 +16,7 @@ colorTexts.addEventListener('click', changeColorText);
 
 
 function changeColorText() {
-
+ 
     if ((document.body.style.backgroundColor == "white")) {
         
         document.body.style.backgroundColor = "black";
@@ -69,6 +69,56 @@ function ajouteH1() {
 let masquerReveler = document.querySelector('#MaskRevel');
 masquerReveler.addEventListener('click', tousMasquerReveler);
 
+
+
 function tousMasquerReveler() {
-    
+
+        let paragraphs = document.querySelectorAll('p');
+        paragraphs.forEach(paragraph=>{
+
+        if(paragraph.style.display == "none") {
+
+            paragraph.style.display = "block";
+
+        } else {
+            paragraph.style.display = "none"
+        }
+
+    })
+
 }
+
+// Exo 5
+
+let masquerReveler2 = document.querySelector('#MaskReve2');
+masquerReveler2.addEventListener('click', tousMasquerReveler2);
+
+function tousMasquerReveler2() {
+
+    let paragraphs = document.querySelectorAll('p');
+
+        if(paragraphs[0].style.display == "none") {
+
+            paragraphs[0].style.display = "block";
+
+        } else {
+            paragraphs[0].style.display = "none"
+        }
+
+}
+
+// Exo 6
+
+let supprimerParagraph = document.querySelector('#suppr');
+supprimerParagraph.addEventListener('click', supprimerCeParagraph);
+
+function supprimerCeParagraph() {
+    
+    if (supprimerParagraph.parentElement) {
+        supprimerParagraph.parentElement.style.display = "none";
+      }
+
+}
+
+
+
