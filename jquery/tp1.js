@@ -1,8 +1,8 @@
 $(document).ready(function(){
     /* notre code ici*/ 
     console.log('Jquery est bien chargé et la page prête!');
-}
-    );
+    }
+);
 
 
 $(document).ready(function(){
@@ -15,10 +15,8 @@ $(document).ready(function(){
 
 
 $('#zoom').click(function(){
-    
     console.log('click sur zoom');
     zoom();
-
 });
 
 $('#dezoom').click(function(){
@@ -32,15 +30,27 @@ $(document).keyup(function(touche){
        var appui = touche.which || touche.keyCode; 
    // le code est compatible tous navigateurs grâce à ces deux propriétés
    
-    if (appui == '107') {
-        zoom()
-    } else if(appui == '109') {
-        dezoom()
-    }
+    // if (appui == '107') {
+    //     zoom()
+    // } else if(appui == '109') {
+    //     dezoom()
+    // }
+
+    switch (appui) {
+        case 107:
+            zoomer();
+            break;
+       case 109:
+            deZoomer();
+        default:
+            console.log(appui);
+            break;
+       }
 
 });
 
 function zoom() {
+
     $('img').each(function () {
         console.log('une image trouvee! a zoommer');
         $(this).css('width', '100%');
@@ -52,11 +62,13 @@ function zoom() {
 }
 
 function dezoom() {
+
     $('img').each(function () {
         console.log('une image trouvee!a dezoommer');
         $(this).css('width', '20%');
 
     });
+
     $('#dezoom').prop('disabled', true);
     $('#zoom').prop('disabled', false);
 }
