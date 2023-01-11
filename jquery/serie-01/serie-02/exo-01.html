@@ -8,13 +8,32 @@
 
     <script src="stagiaire.js"></script>
     <script src="classe.js"></script>
+    <script src="fonction.js"></script>
     <script src="main.js" defer></script>
 
     <title>Document</title>
-    
+
 </head>
 
 <body>
+
+    <fieldset>
+
+        <label for="intituler">Intitulé</label>
+        <input type="text" name="intituler" id="intituler">
+
+        <label for="dateDebut">Date de Début</label>
+        <input type="date" name="dateDebut" id="dateDebut">
+
+        <label for="dateFin">Date de Fin</label>
+        <input type="date" name="dateDeFin" id="dateDeFin">
+
+        <button id="creer">Créer</button>
+        <button id="afficherLog">Afficher dans le Log</button>
+
+    </fieldset>
+
+    <div id="afficheHtml"></div>
 
 </body>
 

@@ -5,12 +5,12 @@ class Classe {
     dateDeDebut;
     dateFin;
 
-    constructor(pIntitule="") {
+    constructor(pIntitule="",pDateDebut,pDateFin) {
 
         this.intitule = pIntitule;
         this.listeStagiaire = new Array()
-        this.dateDeDebut = new Date();
-        this.dateFin = new Date();
+        this.dateDeDebut = pDateDebut;
+        this.dateFin = pDateFin;
 
     }
     ajouterStagiaire(pStagiaire) {
