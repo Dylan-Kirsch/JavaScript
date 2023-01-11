@@ -1,23 +1,16 @@
-class Cercle {
-
-    longueur;
-    largeur;
+class Cercle
+{
     rayon;
-
-    constructor (pLongueur, pLargeur, pRayon) {
-
-        this.longueur = pLongueur
-        this.largeur = pLargeur
-        this.rayon = pRayon
-
-    }
-    calculerSurfacePerimetreRayon(resultP, resultS, resultR)
+    constructor(pRayon)
     {
-
-        resultS = this.longueur * this.largeur
-        resultP = (this.longueur + this.largeur) * 2
-        resultR = 2 * Math.PI * this.rayon
-        alert(`le cercle a une surface de ${resultS} de périmètre ${resultP} et un rayon de ${resultR}`);
-
+        this.rayon =parseInt(pRayon);
     }
-}
+    calculerPerimetre()
+    {
+        return Math.PI*2*this.rayon;
+    }
+    calculerSurface()
+    {
+        return Math.PI*this.rayon**2;
+    }
+}   
